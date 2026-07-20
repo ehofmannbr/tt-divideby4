@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_ehofmannbr_tt-divideby4 (
+module tt_um_ehofmannbr_tt_divideby4 (
     input  wire [7:0] ui_in,    // Dedicated inputs not used
     output wire [7:0] uo_out,   // Dedicated outputs r_out[3..0], g_out[3..0]
     input  wire [7:0] uio_in,   // IOs: Input path not used
