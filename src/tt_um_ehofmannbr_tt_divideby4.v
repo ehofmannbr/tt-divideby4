@@ -199,14 +199,14 @@ always @(posedge clk) begin
       end
 end
 
-assign uo_out[7:4] = _cor[11:8];
-assign uo_out[3:0] = _cor[7:4];
-assign uio_out[7:4] = _cor[3:0];
-assign uio_out[3] = _hs;
-assign uio_out[2] = _vs;
-assign uio_out[1] = 1'b0;
-assign uio_out[0] = 1'b0;
-assign uio_oe = 8'b11111111; // uio_out active as outputs
+assign uo_out[7:4]  = _cor[11:8];  // Red
+assign uo_out[3:0]  = _cor[7:4];   // Green
+assign uio_out[7:4] = _cor[3:0];   // Blue
+assign uio_out[3]   = _hs;         // Hor 
+assign uio_out[2]   = _vs;         // Vert
+assign uio_out[1]   = 1'b0;
+assign uio_out[0]   = 1'b0;
+assign uio_oe       = 8'b11111111; // uio_out selected as outputs
 
 endmodule
 
