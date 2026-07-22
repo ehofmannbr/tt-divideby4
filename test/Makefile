@@ -6,7 +6,7 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = tt_um_ehofmannbr_tt_divideby4.v
+PROJECT_SOURCES = tt_um_ehofmannbr_pmodvga_06.v hsync_generator.v
 
 ifneq ($(GATES),yes)
 
