@@ -10,9 +10,8 @@ from cocotb.triggers import ClockCycles
 async def test_project(dut):
     dut._log.info("Start")
 
-    # Set the clock period to 10 us (100 KHz)
-    # Set the clock period to 20 ns (50 Mhz)
-    clock = Clock(dut.clk, 20, unit="ns")
+    # Set the clock period to 40 ns (25 Mhz)
+    clock = Clock(dut.clk, 40, unit="ns")
     cocotb.start_soon(clock.start())
 
     # Reset
