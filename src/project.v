@@ -5,6 +5,7 @@
 
 `default_nettype none
 // pmodvga_06 - color tiles VGA 640x480 using TT VGA Playground Module Template
+// Based on VGA Examples from Uri Shaked
 // Consider clk 25 Mhz
 
 module tt_um_ehofmannbr_pmodvga_06(
